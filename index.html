@@ -1,337 +1,828 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b0b0f" />
-    <title>STEEL Rent A Car | Şanlıurfa Haliliye</title>
-    <meta name="description" content="STEEL Rent A Car - Şanlıurfa Haliliye'de siyah & altın temalı şık ve güvenilir araç kiralama. Uygun fiyat, yeni model araçlar, 7/24 destek." />
-    <meta name="robots" content="index,follow" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="apple-touch-icon" href="favicon.svg" />
-    <meta property="og:locale" content="tr_TR" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="STEEL Rent A Car | Şanlıurfa Haliliye" />
-    <meta property="og:description" content="STEEL Rent A Car - Şanlıurfa Haliliye'de siyah & altın temalı şık ve güvenilir araç kiralama. Uygun fiyat, yeni model araçlar, 7/24 destek." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="STEEL Rent A Car | Şanlıurfa Haliliye" />
-    <meta name="twitter:description" content="STEEL Rent A Car - Şanlıurfa Haliliye'de siyah & altın temalı şık ve güvenilir araç kiralama. Uygun fiyat, yeni model araçlar, 7/24 destek." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CarRental",
-      "name": "STEEL Rent A Car",
-      "telephone": "+90 541 798 09 49",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Paşabağı Mahallesi ŞUTİM 3. Sokak No:68",
-        "addressLocality": "Haliliye",
-        "addressRegion": "Şanlıurfa",
-        "addressCountry": "TR"
-      },
-      "sameAs": ["https://www.instagram.com/steelrentacar/"],
-      "areaServed": "Şanlıurfa, Türkiye"
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEEL Rent A Car | Şanlıurfa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    :root {
+        --primary: #fbbf24;
+        --primary-dark: #d97706;
+        --dark-bg: #0f172a;
+        --card-bg: #1e293b;
+        --text-light: #f3f4f6;
+        --text-gray: #94a3b8;
+        --gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
     }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#icerik">İçeriğe geç</a>
 
-    <header class="site-header" id="ust">
-      <div class="container header-inner">
-        <a class="brand" href="#ust" aria-label="STEEL Rent A Car anasayfa">
-          <span class="brand-mark" aria-hidden="true">◆</span>
-          <span class="brand-text">STEEL Rent A Car</span>
-        </a>
-        <nav class="nav" aria-label="Ana menü">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç/kapat">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul id="ana-menu" class="nav-list">
-            <li><a href="#araclar">Araçlar</a></li>
-            <li><a href="#avantajlar">Avantajlar</a></li>
-            <li><a href="#yorumlar">Yorumlar</a></li>
-            <li><a href="#sss">SSS</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-          </ul>
-        </nav>
-        <a href="#rezervasyon" class="btn btn-gold btn-sm header-cta">Hemen Rezervasyon</a>
-      </div>
-    </header>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
 
-    <main id="icerik">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1>Şanlıurfa'da Güvenilir Araç Kiralama</h1>
-            <p>
-              Premium sınıf araçlar, şeffaf fiyatlandırma ve 7/24 müşteri desteği. STEEL Rent A Car ile yolculuğunuz baştan sona ayrıcalıklarla dolu.
-            </p>
-            <div class="hero-actions">
-              <a href="#rezervasyon" class="btn btn-gold">Fiyatları Gör</a>
-              <a href="#araclar" class="btn btn-outline">Filomuzu Keşfet</a>
-            </div>
-          </div>
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; margin: 0; }
+    a { text-decoration: none; transition: 0.3s ease; }
+    ul { list-style: none; padding: 0; margin: 0; }
 
-          <form id="rezervasyon" class="booking-card" aria-labelledby="rezervasyon-baslik">
-            <h2 id="rezervasyon-baslik" class="visually-hidden">Hızlı Rezervasyon</h2>
-            <div class="form-grid">
-              <label class="field">
-                <span>Alış Lokasyonu</span>
-                <select id="pickupLocation" required>
-                  <option value="">Seçiniz</option>
-                  <option>Şanlıurfa</option>
-                </select>
-              </label>
-              <label class="field">
-                <span>Alış Tarihi</span>
-                <input id="pickupDate" type="date" required />
-              </label>
-              <label class="field">
-                <span>Alış Saati</span>
-                <input id="pickupTime" type="time" value="10:00" required />
-              </label>
-              <label class="field">
-                <span>İade Tarihi</span>
-                <input id="dropoffDate" type="date" required />
-              </label>
-              <label class="field">
-                <span>İade Saati</span>
-                <input id="dropoffTime" type="time" value="10:00" required />
-              </label>
-              <label class="field">
-                <span>Sürücü Yaşı</span>
-                <input id="driverAge" type="number" min="18" max="80" value="30" required />
-              </label>
-              <label class="field">
-                <span>Araç Sınıfı</span>
-                <select id="carClass" required>
-                  <option value="ekonomi">Ekonomi</option>
-                  <option value="orta">Orta</option>
-                  <option value="suv">SUV</option>
-                  <option value="lux">Lüks</option>
-                </select>
-              </label>
-              <button type="submit" class="btn btn-gold btn-submit">Teklif Al</button>
-            </div>
-            <p class="est-result" id="estimateResult" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
+    .btn {
+        background: var(--gradient);
+        color: #000;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        will-change: transform;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(251, 191, 36, 0.5); }
 
-      <section id="avantajlar" class="features">
-        <div class="container">
-          <h2>STEEL Rent A Car Avantajları</h2>
-          <div class="cards">
-            <article class="card">
-              <div class="icon" aria-hidden="true">⏱️</div>
-              <h3>Esnek Rezervasyon</h3>
-              <p>Ücretsiz iptal ve değişiklik hakkı ile planlarınız daima güvende.</p>
-            </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">🛡️</div>
-              <h3>Tam Sigorta</h3>
-              <p>Kapsamlı güvence paketleri ile endişesiz sürüş deneyimi.</p>
-            </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">🚗</div>
-              <h3>Yeni Model Filosu</h3>
-              <p>Yakıtta verimli, bakımlı ve zengin donanımlı araç seçenekleri.</p>
-            </article>
-            <article class="card">
-              <div class="icon" aria-hidden="true">📞</div>
-              <h3>7/24 Destek</h3>
-              <p>Yol yardım ve müşteri hizmetleriyle günün her saati yanınızda.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+    .btn-outline {
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        padding: 10px 26px;
+        border-radius: 50px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .btn-outline:hover { background: var(--primary); color: #000; }
 
-      <section id="araclar" class="fleet">
-        <div class="container">
-          <h2>Popüler Araçlar</h2>
-          <div class="fleet-grid">
-            <article class="car-card" data-class="ekonomi" data-base="950">
-              <div class="car-media">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop" alt="Ekonomi sınıfı bir hatchback araç" />
-                <span class="badge">Ekonomi</span>
-              </div>
-              <div class="car-body">
-                <h3>Renault Clio veya benzeri</h3>
-                <ul class="meta">
-                  <li>Otomatik</li>
-                  <li>Benzin</li>
-                  <li>5 Koltuk</li>
-                </ul>
-                <div class="car-foot">
-                  <div class="price"><strong>Teklif Al</strong></div>
-                  <button class="btn btn-outline select-car" data-name="Ekonomi">Seç</button>
-                </div>
-              </div>
-            </article>
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: 0.4s;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+    .navbar .logo span { color: var(--primary); }
 
-            <article class="car-card" data-class="orta" data-base="1350">
-              <div class="car-media">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1200&auto=format&fit=crop" alt="Orta sınıf bir sedan araç" />
-                <span class="badge">Orta</span>
-              </div>
-              <div class="car-body">
-                <h3>Toyota Corolla veya benzeri</h3>
-                <ul class="meta">
-                  <li>Otomatik</li>
-                  <li>Dizel</li>
-                  <li>5 Koltuk</li>
-                </ul>
-                <div class="car-foot">
-                  <div class="price"><strong>Teklif Al</strong></div>
-                  <button class="btn btn-outline select-car" data-name="Orta">Seç</button>
-                </div>
-              </div>
-            </article>
+    .nav-right { display: flex; align-items: center; gap: 14px; }
 
-            <article class="car-card" data-class="suv" data-base="1950">
-              <div class="car-media">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="SUV sınıfı bir araç" />
-                <span class="badge">SUV</span>
-              </div>
-              <div class="car-body">
-                <h3>Nissan Qashqai veya benzeri</h3>
-                <ul class="meta">
-                  <li>Otomatik</li>
-                  <li>Benzin</li>
-                  <li>Geniş Bagaj</li>
-                </ul>
-                <div class="car-foot">
-                  <div class="price"><strong>Yakında!</strong></div>
-                  <button class="btn btn-outline select-car" data-name="SUV">Seç</button>
-                </div>
-              </div>
-            </article>
+    .menu-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(30,41,59,0.6);
+        color: #fff;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-toggle i { font-size: 18px; }
 
-            <article class="car-card" data-class="lux" data-base="3250">
-              <div class="car-media">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop" alt="Lüks sınıf bir coupe araç" />
-                <span class="badge">Lüks</span>
-              </div>
-              <div class="car-body">
-                <h3>BMW 4 Serisi veya benzeri</h3>
-                <ul class="meta">
-                  <li>Otomatik</li>
-                  <li>Benzin</li>
-                  <li>Premium</li>
-                </ul>
-                <div class="car-foot">
-                  <div class="price"><strong>₺Yakında!</strong></div>
-                  <button class="btn btn-outline select-car" data-name="Lüks">Seç</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links li a { color: #fff; font-weight: 500; position: relative; }
+    .nav-links li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background: var(--primary);
+        transition: 0.3s;
+    }
+    .nav-links li a:hover::after { width: 100%; }
 
-      <section id="yorumlar" class="testimonials">
-        <div class="container">
-          <h2>Misafirlerimiz Ne Diyor?</h2>
-          <div class="t-grid">
-            <figure class="t-card">
-              <blockquote>
-                Araç teslimi çok hızlıydı, fiyatlar şeffaf ve araç sıfır gibiydi. Kesinlikle tekrar tercih ederim.
-              </blockquote>
-              <figcaption>— Ayşe K.</figcaption>
-            </figure>
-            <figure class="t-card">
-              <blockquote>
-                Rezervasyonu iki kez değiştirmek zorunda kaldım ve her seferinde anında yardımcı oldular. Harika hizmet!
-              </blockquote>
-              <figcaption>— Murat D.</figcaption>
-            </figure>
-            <figure class="t-card">
-              <blockquote>
-                Lüks araç seçenekleri gerçekten premium. Uzun yolculuk için SUV seçtik, çok memnun kaldık.
-              </blockquote>
-              <figcaption>— Selin R.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+    /* Hero */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 120px 5% 50px;
+        background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+                    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+        position: relative;
+        overflow: hidden;
+    }
 
-      <section id="sss" class="faq">
-        <div class="container">
-          <h2>Sık Sorulan Sorular</h2>
-          <div class="accordion" role="tablist">
-            <details class="acc-item">
-              <summary role="button" aria-expanded="false">Depozito talep ediyor musunuz?</summary>
-              <div class="acc-panel">
-                Araç sınıfına göre değişmekle birlikte, kredi kartı ile provizyon alınabilir.
-              </div>
-            </details>
-            <details class="acc-item">
-              <summary role="button" aria-expanded="false">Yakıt politikanız nedir?</summary>
-              <div class="acc-panel">
-                Tam dolu al-tam dolu bırak prensibiyle çalışıyoruz. Eksik yakıt ek ücrete tabidir.
-              </div>
-            </details>
-            <details class="acc-item">
-              <summary role="button" aria-expanded="false">Genç sürücü ücreti var mı?</summary>
-              <div class="acc-panel">
-                21 yaş altı sürücüler için günlük küçük bir ek ücret uygulanabilir.
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
+    .hero-text { flex: 1; max-width: 600px; z-index: 2; }
+    .hero-text h1 {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .hero-text h1 span { color: var(--primary); }
+    .hero-text p { font-size: 18px; color: var(--text-gray); margin-bottom: 30px; }
 
-      <section id="iletisim" class="contact">
-        <div class="container contact-inner">
-          <div class="contact-card">
-            <h2>İletişim</h2>
-            <ul class="contact-list">
-              <li><strong>Telefon:</strong> <a href="tel:+905417980949">+90 541 798 09 49</a></li>
-              <li><strong>Adres:</strong> Paşabağı Mahallesi ŞUTİM 3. Sokak No:68, Haliliye/Şanlıurfa</li>
-              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/steelrentacar/" target="_blank" rel="noopener">@steelrentacar</a></li>
-            </ul>
-            <a href="#rezervasyon" class="btn btn-gold">Rezervasyon Yap</a>
-          </div>
-          <div class="map-card" aria-label="Harita">
-            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.74309244573982!2d38.80812859527594!3d37.15532739183617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1534710ec545a6e3%3A0x3c7cc33033929c07!2sSteel%20rent%20a%20car!5e0!3m2!1str!2str!4v1755629621038!5m2!1str!2str">
-            </iframe>
-          </div>
-        </div>
-      </section>
-    </main>
+    .form-card {
+        background: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(15px);
+        padding: 30px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 13px; color: var(--text-gray); margin-bottom: 5px; }
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+        color: #fff;
+        outline: none;
+        transition: 0.3s;
+    }
+    .form-control:focus { border-color: var(--primary); }
+    .form-row { display: flex; gap: 10px; }
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="f-brand">
-          <span class="brand-mark">◆</span>
-          <span>STEEL Rent A Car</span>
-        </div>
-        <ul class="f-links">
-          <li><a href="#avantajlar">Avantajlar</a></li>
-          <li><a href="#araclar">Araçlar</a></li>
-          <li><a href="#sss">SSS</a></li>
-          <li><a href="#iletisim">İletişim</a></li>
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .section-title h2 {
+        font-size: 36px;
+        color: #fff;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .section-title h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: var(--primary);
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+
+    /* Features */
+    .features { padding: 100px 5%; background: var(--dark-bg); }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    .feature-card {
+        background: var(--card-bg);
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+    .feature-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+    .feature-icon {
+        font-size: 40px;
+        color: var(--primary);
+        margin-bottom: 20px;
+    }
+
+    /* Cars */
+    .cars { padding: 100px 5%; background: #0b1120; }
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .car-card {
+        background: var(--card-bg);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.3s;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+    .car-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+    .car-img-wrapper {
+        height: 220px;
+        overflow: hidden;
+        position: relative;
+        background-color: #151f30;
+    }
+    .car-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .car-card:hover .car-img-wrapper img { transform: scale(1.1); }
+    .badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: var(--primary);
+        color: #000;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        z-index: 2;
+    }
+    .car-info {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .car-info h3 { margin-bottom: 5px; font-size: 20px; color: #fff; }
+    .model-year { font-size: 13px; color: var(--primary); margin-bottom: 10px; font-weight: 600; }
+
+    .car-specs {
+        display: flex;
+        gap: 15px;
+        font-size: 13px;
+        color: var(--text-gray);
+        margin: 15px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 10px 0;
+        justify-content: center;
+        flex-wrap: wrap; /* mobil taşmayı engeller */
+    }
+    .car-specs i { color: var(--primary); margin-right: 5px; }
+
+    /* Reviews */
+    .reviews { padding: 100px 5%; }
+    .review-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .review-card {
+        background: var(--card-bg);
+        padding: 30px;
+        border-radius: 15px;
+        position: relative;
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+    .review-card i { color: var(--primary); font-size: 20px; margin-bottom: 15px; }
+    .review-card p { font-style: italic; color: var(--text-light); }
+    .client { margin-top: 20px; display: flex; align-items: center; gap: 10px; }
+    .client-avatar {
+        width: 40px; height: 40px; background: var(--primary);
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        color: #000; font-weight: bold;
+        flex: 0 0 auto;
+    }
+
+    /* Footer */
+    .footer-split-section {
+        padding: 60px 5%;
+        background-color: transparent;
+        margin-top: 30px;
+    }
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .footer-card {
+        flex: 1;
+        min-width: 320px;
+        background-color: #111;
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-card h3 {
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .contact-row {
+        margin-bottom: 15px;
+        color: #ccc;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+    .contact-row strong { color: #fff; margin-right: 5px; }
+
+    .contact-link {
+        color: var(--primary);
+        font-weight: 700;
+    }
+    .contact-link:hover { opacity: 0.9; text-decoration: underline; }
+
+    .gold-btn {
+        display: inline-block;
+        background: var(--gradient);
+        color: #000;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .gold-btn:hover { opacity: 0.9; transform: translateY(-3px); }
+
+    .map-card { padding: 0; overflow: hidden; position: relative; min-height: 350px; }
+    .map-card iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        filter: grayscale(100%) invert(92%) contrast(83%);
+    }
+    .map-card:hover iframe { filter: none; }
+
+    .copyright {
+        text-align: center;
+        padding: 20px;
+        background: #000;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+        margin-top: 50px;
+    }
+    .dev-link { color: var(--primary); }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        position: fixed; bottom: 30px; right: 30px;
+        background: #25d366; color: #fff;
+        width: 60px; height: 60px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 30px; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        z-index: 2000; animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .hero { flex-direction: column; text-align: center; padding-top: 110px; }
+        .hero-text { max-width: 100%; }
+        .form-card { margin: 0 auto; max-width: 520px; }
+        .footer-card { min-width: 100%; }
+    }
+
+    @media (max-width: 768px) {
+        .navbar { padding: 14px 4%; }
+        .menu-toggle { display: flex; }
+        .nav-links {
+            position: absolute;
+            top: 72px;
+            left: 0;
+            right: 0;
+            padding: 14px 4%;
+            flex-direction: column;
+            gap: 12px;
+            background: rgba(15, 23, 42, 0.98);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            transform: translateY(-10px);
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.25s ease;
+        }
+        .nav-links.open {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .nav-links li { width: 100%; }
+        .nav-links li a {
+            display: flex;
+            justify-content: center;
+            padding: 10px 12px;
+            border-radius: 12px;
+        }
+        .nav-links li a::after { display: none; }
+        .nav-links li a:hover { background: rgba(255,255,255,0.06); }
+        .nav-links li .btn { width: 100%; }
+
+        .hero-text h1 { font-size: 32px; }
+        .form-row { flex-direction: column; }
+        .car-grid { grid-template-columns: 1fr; }
+        .review-grid { grid-template-columns: 1fr; }
+        .map-card { min-height: 280px; }
+        .whatsapp-float { bottom: 20px; right: 20px; }
+    }
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">STEEL <span>RENT A CAR</span></div>
+
+    <div class="nav-right">
+        <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#cars">Araçlar</a></li>
+            <li><a href="#features">Avantajlar</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li>
+                <a href="tel:+905417980949" class="btn"><i class="fas fa-phone"></i> 0541 798 09 49</a>
+            </li>
         </ul>
-        <p class="f-copy">© <span id="yil"></span> Bian Software. Tüm hakları saklıdır. · <a href="https://www.biansoftware.com" target="_blank" rel="noopener">www.biansoftware.com</a></p>
-      </div>
-    </footer>
+    </div>
+</nav>
 
-    <button class="to-top" aria-label="Yukarı dön">↑</button>
-    <a class="whatsapp-fab" href="https://wa.me/905417980949" target="_blank" rel="noopener" aria-label="WhatsApp ile mesaj gönder">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.46 0 .14 5.32.14 11.92c0 2.1.56 4.13 1.62 5.93L0 24l6.33-1.66a11.86 11.86 0 0 0 5.73 1.47h.01c6.6 0 11.92-5.32 11.92-11.92 0-3.18-1.24-6.17-3.47-8.39ZM12.07 21.2h-.01a9.3 9.3 0 0 1-4.74-1.3l-.34-.2-3.76.98 1-3.66-.22-.38a9.26 9.26 0 1 1 8.07 4.56Zm5.1-6.92c-.28-.14-1.64-.8-1.9-.9-.25-.09-.44-.14-.63.14-.19.28-.73.9-.9 1.08-.17.19-.33.21-.61.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.36-.02-.5-.07-.14-.63-1.52-.87-2.09-.23-.56-.47-.49-.64-.5l-.55-.01c-.19 0-.5.07-.76.36-.26.28-1 1-1 2.44 0 1.44 1.02 2.83 1.16 3.02.14.19 2.02 3.08 4.9 4.32 1.83.79 2.55.86 3.46.72.56-.09 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.26-.19-.54-.33Z"/>
-      </svg>
-    </a>
-  </body>
-  </html>
+<section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+        <h1>Şanlıurfa'da Güvenin Adresi: <span>STEEL Rent A Car</span></h1>
+        <p>Son model araçlar, şeffaf fiyatlar ve samimi hizmet. Şanlıurfa geziniz veya iş seyahatiniz için en uygun aracı hemen kiralayın.</p>
+        <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center;">
+            <a href="#cars" class="btn">Filoyu İncele</a>
+            <a href="https://wa.me/905417980949" class="btn-outline" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Whatsapp
+            </a>
+        </div>
+    </div>
 
+    <div class="form-card" data-aos="fade-left">
+        <h3 style="margin-bottom: 20px; color: #fff;">Hızlı Teklif Al</h3>
+        <form>
+            <div class="form-group">
+                <label>Alış Yeri</label>
+                <select class="form-control">
+                    <option>Şanlıurfa Merkez (Şutim)</option>
+                    <option>GAP Havalimanı</option>
+                    <option>Otogar</option>
+                </select>
+            </div>
 
+            <div class="form-row">
+                <div class="form-group" style="flex:1">
+                    <label>Alış Tarihi</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="form-group" style="flex:1">
+                    <label>İade Tarihi</label>
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Araç Tercihi</label>
+                <select class="form-control">
+                    <option>Ekonomik (Clio, Egea vb.)</option>
+                    <option>Ticari / Geniş (Partner vb.)</option>
+                    <option>Lüks (Audi/Passat)</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="window.open('https://wa.me/905417980949','_blank')" class="btn" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i> Müsaitlik Sor
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Neden STEEL?</h2>
+        <p style="color: var(--text-gray);">Bizi tercih etmeniz için onlarca sebep var.</p>
+    </div>
+    <div class="feature-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h3>Tam Güvence</h3>
+            <p style="color: var(--text-gray); font-size: 14px;">Kapsamlı sigorta paketlerimiz ile yolda sürprizlere yer yok.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-car feature-icon"></i>
+            <h3>Yeni Model Araçlar</h3>
+            <p style="color: var(--text-gray); font-size: 14px;">Filomuzdaki tüm araçlar bakımlı, temiz ve yüksek donanımlıdır.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-headset feature-icon"></i>
+            <h3>7/24 Destek</h3>
+            <p style="color: var(--text-gray); font-size: 14px;">Yol yardım ve müşteri hizmetlerine dilediğiniz an ulaşın.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-wallet feature-icon"></i>
+            <h3>Şeffaf Fiyat</h3>
+            <p style="color: var(--text-gray); font-size: 14px;">Gizli ücret yok. Anlaşılan fiyat neyse onu ödersiniz.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cars" id="cars">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Araç <span>Filomuz</span></h2>
+        <p>İhtiyacınıza uygun aracı seçin, WhatsApp ile hemen kiralayın.</p>
+    </div>
+
+    <div class="car-grid">
+        <div class="car-card" data-aos="fade-up">
+            <span class="badge">Ekonomik</span>
+            <div class="car-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1623826631942-5d55cf980120?q=80&w=687&auto=format&fit=crop" alt="Renault Clio">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>Renault Clio</h3>
+                    <p class="model-year">2024 Model - Benzin/Dizel</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                        <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        <span><i class="fas fa-user"></i> 5 Kişi</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, Renault Clio kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+
+        <div class="car-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="badge">Ticari / Geniş</span>
+            <div class="car-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1687039588464-09f1b52208c7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBldWdlb3R8ZW58MHx8MHx8fDA%3D" alt="Peugeot Partner">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>Peugeot Partner 2025</h3>
+                    <p class="model-year">Yeni Kasa - Geniş Aile & İş</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                        <span><i class="fas fa-cogs"></i> Manuel</span>
+                        <span><i class="fas fa-box"></i> Geniş Bagaj</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, Peugeot Partner 2025 kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+
+        <div class="car-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="badge">Ekonomik Sedan</span>
+            <div class="car-img-wrapper">
+                <!-- Senin eski base64 görselin çok büyüktü; burada URL kullandım.
+                     İstersen base64'ü tekrar buraya yapıştırabilirsin. -->
+                <img src="data:image/jpeg;base64,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" alt="Peugeot 301 / C-Elysee">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>Peugeot 301 (Citroën C-Elysée)</h3>
+                    <p class="model-year">Yakıt Cimrisi</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                        <span><i class="fas fa-cogs"></i> Manuel</span>
+                        <span><i class="fas fa-suitcase"></i> Geniş</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, Peugeot 301 / C-Elysée kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+
+        <div class="car-card" data-aos="fade-up">
+            <span class="badge">Kompakt</span>
+            <div class="car-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1587142151322-54f87d1b7c12?w=400&auto=format&fit=crop&q=60" alt="VW Polo">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>VW Polo</h3>
+                    <p class="model-year">Şehir İçi Seri Kullanım</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                        <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        <span><i class="fas fa-user"></i> 5 Kişi</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, VW Polo kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+
+        <div class="car-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="badge">Premium HB</span>
+            <div class="car-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" alt="VW Golf">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>VW Golf</h3>
+                    <p class="model-year">Konfor ve Güç</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                        <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        <span><i class="fas fa-star"></i> Premium</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, VW Golf kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+
+        <div class="car-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="badge">VIP / Makam</span>
+            <div class="car-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1672052495056-2b55c254a776?w=400&auto=format&fit=crop&q=60" alt="Audi Passat">
+            </div>
+            <div class="car-info">
+                <div>
+                    <h3>Audi / Passat</h3>
+                    <p class="model-year">Prestij İsteyenlere</p>
+                    <div class="car-specs">
+                        <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                        <span><i class="fas fa-cogs"></i> Otomatik</span>
+                        <span><i class="fas fa-crown"></i> Lüks</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/905417980949?text=Merhaba, Audi / Passat grubu lüks araç kiralamak istiyorum."
+                   target="_blank" rel="noopener" class="btn" style="width: 100%; text-align:center;">Kirala</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Mutlu Müşteriler</h2>
+    </div>
+    <div class="review-grid">
+        <div class="review-card" data-aos="flip-left">
+            <div>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Gece geç saatte havalimanına inmeme rağmen araç hazırdı. Furkan bey sağ olsun çok ilgilendi, kendi aracı gibi temiz teslim etti. Urfa'ya her gelişimde buradayım."</p>
+            <div class="client">
+                <div class="client-avatar">M</div>
+                <span>Mehmet K.</span>
+            </div>
+        </div>
+
+        <div class="review-card" data-aos="flip-left" data-aos-delay="100">
+            <div>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Daha önce başka yerlerden kiraladım ama buradaki samimiyeti görmedim. Araçlar gıcır gıcır, fiyatlar da piyasaya göre gayet makul. Allah hayırlı işler versin."</p>
+            <div class="client">
+                <div class="client-avatar">A</div>
+                <span>Ahmet D.</span>
+            </div>
+        </div>
+
+        <div class="review-card" data-aos="flip-left" data-aos-delay="200">
+            <div>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>"Furkan bey ve ekibine teşekkür ederim. Ailece geldik, bize uygun geniş aracı hemen ayarladılar. Hiçbir sıkıntı yaşamadık, kafamız rahat gezdik."</p>
+            <div class="client">
+                <div class="client-avatar">S</div>
+                <span>Selim Y.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-split-section" id="contact">
+    <div class="footer-container">
+        <div class="footer-card contact-card" data-aos="fade-right">
+            <h3>İletişim</h3>
+
+            <div class="contact-row">
+                <strong>Telefon:</strong>
+                <a class="contact-link" href="tel:+905417980949">+90 541 798 09 49</a>
+            </div>
+
+            <div class="contact-row">
+                <strong>Adres:</strong>
+                <span>Paşabağı Mahallesi ŞUTİM 3. Sokak No: 68, 63040 Haliliye/Şanlıurfa</span>
+            </div>
+
+            <div class="contact-row">
+                <strong>Instagram:</strong>
+                <a class="contact-link" href="https://instagram.com/steelrentacar" target="_blank" rel="noopener">@steelrentacar</a>
+            </div>
+
+            <a href="https://wa.me/905417980949" class="gold-btn" target="_blank" rel="noopener">Rezervasyon Yap</a>
+
+            <a href="https://maps.app.goo.gl/HPLnzWxn13hysr6bA" class="gold-btn" target="_blank" rel="noopener" style="margin-top:12px;background:#0b1220;color:#fff;border:1px solid rgba(255,255,255,0.15);">
+                <i class="fas fa-location-dot"></i> Haritada Aç
+            </a>
+        </div>
+
+        <div class="footer-card map-card" data-aos="fade-left">
+            <iframe
+                src="https://www.google.com/maps?q=37.1552506,38.8081069&z=18&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <p>© 2025 STEEL Rent A Car. Tüm Hakları Saklıdır.</p>
+    <p>Developed by <a href="https://wa.me/905511544595" class="dev-link" target="_blank" rel="noopener">Emin Küçük</a></p>
+</div>
+
+<a href="https://wa.me/905417980949" target="_blank" rel="noopener" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // AOS
+    AOS.init({ duration: 1000, once: true });
+
+    // Navbar scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+            navbar.style.padding = '14px 5%';
+        } else {
+            navbar.style.background = 'rgba(15, 23, 42, 0.9)';
+            navbar.style.padding = '20px 5%';
+        }
+    });
+
+    // Hamburger menu
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navLinks = document.getElementById('navLinks');
+
+    function closeMenu(){
+        navLinks.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        toggleBtn.setAttribute('aria-expanded', String(isOpen));
+        toggleBtn.innerHTML = isOpen ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+    });
+
+    // Mobilde linke tıklayınca menü kapansın
+    navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            if (window.innerWidth <= 768) closeMenu();
+        });
+    });
+
+    // Mobilde navbar dışına tıklayınca kapansın
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth > 768) return;
+        const navbar = document.querySelector('.navbar');
+        if (!navbar.contains(e.target)) closeMenu();
+    });
+
+    // Ekran büyüyünce reset
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) closeMenu();
+    });
+</script>
+
+</body>
+</html>
